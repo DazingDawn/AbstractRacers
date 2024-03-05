@@ -6,8 +6,22 @@
 import java.util.ArrayList;
 
 public class Race {
-    private ArrayList<Racer> contestants;
+    private ArrayList<AbstractRacer> contestants;
     private int DISTANCE;
+
+    public Race(int distance) {
+        DISTANCE = distance;
+        contestants = new ArrayList<AbstractRacer>();
+    }
+    public void addContestant(AbstractRacer r) {
+        contestants.add(r);
+    }
+    public ArrayList<AbstractRacer> getContestants() {
+        return contestants;
+    }
+    public int getDistance() {
+        return DISTANCE;
+    }
 
 
 }
