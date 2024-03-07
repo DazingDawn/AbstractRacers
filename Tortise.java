@@ -1,6 +1,6 @@
-public class Tortoise extends AbstractRacer{
+public class Tortise extends AbstractRacer {
 
-    public Tortoise(double speed, double location) {
+    public Tortise(double speed, double location) {
         super(speed, location);
     }
     public void move() {

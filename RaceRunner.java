@@ -2,8 +2,10 @@ public class RaceRunner {
     public static void main(String[] args) 
     {
         Race race = new Race(100);
-        race.addContestant(new McQueen(2.0, 0));
-        race.addContestant(new Hare(1.5, 0, 10));
+        race.addContestant(new McQueen(5.0, 0));
+        race.addContestant(new Hare(2.5, 0, 10));
+        race.addContestant(new Tortise(1.0, 0.0));
+
         while (!isRaceFinished(race)) 
         {
             moveAllContestants(race);
