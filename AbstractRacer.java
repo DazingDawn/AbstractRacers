@@ -1,7 +1,3 @@
-/**
- * Makes a car
- */
-
 public abstract class AbstractRacer {
     protected double speed;
     protected double location;
@@ -12,4 +8,8 @@ public abstract class AbstractRacer {
     }
 
     public abstract void move();
+
+    public double getLocation() {
+        return location;
+    }
 }
