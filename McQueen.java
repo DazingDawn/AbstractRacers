@@ -1,22 +1,17 @@
 import java.util.Random;
 
-public class McQueen extends AbstractRacer 
-{
-    public McQueen(double location) 
-    {
-        super(location);
+public class McQueen extends AbstractRacer {
+    public McQueen(double speed, double location) {
+        super(speed, location);
     }
-    public void move() 
-    {
+    public void move() {
         Random rand = new Random();
-        double randNum = rand.nextDouble(11);
-        if (randNum < 8.0)
-        {
-            location += randNum;
-        }
-        else
-        {
+        double randNum = rand.nextDouble();
+        if (randNum < 0.8) {
+            location += speed;
+        } else {
             location = 0;
+            System.out.println("McQueen crashed!");
         }
     }
 }
