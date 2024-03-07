@@ -6,11 +6,12 @@ public class Hare extends AbstractRacer{
         this.energy = energy;
     }
     public void move() {
-        if (energy > 0) {
+        if (Math.random() < 0.2) {
+            energy += 1;
+        } else if (energy > 0) {
             location += speed;
             energy -= 1;
-        }
-        else {
+        } else {
             energy += 1;
         }
     }
